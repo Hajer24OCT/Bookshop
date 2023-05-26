@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "741615657110",
+    "firebase_url": "https://bookshop-e6907-default-rtdb.firebaseio.com",
+    "project_id": "bookshop-e6907",
+    "storage_bucket": "bookshop-e6907.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741615657110:android:2397c27ab42d5af378e2b7",
+        "android_client_info": {
+          "package_name": "com.example.agathachristie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741615657110-qt0sfj4etdvvqt96vas2i74tbiv9lo63.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAXPUiqXxCSat6zfEzosmQRqROL1W1hbY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741615657110-qt0sfj4etdvvqt96vas2i74tbiv9lo63.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
