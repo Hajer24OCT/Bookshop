@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class Activity_Books_items extends AppCompatActivity {
 
-    TextView name;
+    TextView name , details;
     ImageView image;
 
     @Override
@@ -19,9 +19,11 @@ public class Activity_Books_items extends AppCompatActivity {
 
         name = findViewById(R.id.griddata);
         image = findViewById(R.id.imageView);
+        details = findViewById(R.id.textView4);
 
         Intent intent = getIntent();
         name.setText(intent.getStringExtra("name"));
         image.setImageResource(intent.getIntExtra("image" ,0));
+        details.setText(intent.getStringExtra("details"));
     }
 }

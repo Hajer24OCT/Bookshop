@@ -1,16 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".DeliveryOptions">
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".DeliveryOptions"
+android:orientation="vertical"
+android:padding="16dp">
 
-    <ImageView
-        android:id="@+id/imageView6"
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Select Delivery Option"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="16dp" />
+
+<RadioGroup
+    android:id="@+id/radio_group_delivery_options"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/radio_standard_shipping"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/rrr"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="Standard Shipping"
+        android:textSize="18sp"
+        android:paddingVertical="8dp" />
+
+    <RadioButton
+        android:id="@+id/radio_express_shipping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Express Shipping"
+        android:textSize="18sp"
+        android:paddingVertical="8dp" />
+
+    <RadioButton
+        android:id="@+id/radio_in_store_pickup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In-store Pickup"
+        android:textSize="18sp"
+        android:paddingVertical="8dp" />
+
+</RadioGroup>
+
+<Button
+    android:id="@+id/button_confirm_delivery"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Confirm"
+    android:textSize="18sp"
+    android:layout_marginTop="16dp" />
+
+</LinearLayout>
